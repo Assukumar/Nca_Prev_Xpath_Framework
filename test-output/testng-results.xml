@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="12" total="19" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-20T15:28:57 IST" name="Suite" finished-at="2023-11-20T15:41:47 IST" duration-ms="770384">
+    <groups>
+    </groups>
+    <test started-at="2023-11-20T15:28:57 IST" name="Test" finished-at="2023-11-20T15:41:47 IST" duration-ms="770384">
+      <class name="testRepo.CreateProduct">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testRepo.CreateProduct@46cdf8bd]" started-at="2023-11-20T15:30:52 IST" name="launchBrowser" finished-at="2023-11-20T15:32:26 IST" duration-ms="94228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testRepo.CreateProduct@46cdf8bd]" started-at="2023-11-20T15:32:26 IST" name="loginOperation" finished-at="2023-11-20T15:32:28 IST" duration-ms="2472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method signature="createProduct()[pri:0, instance:testRepo.CreateProduct@46cdf8bd]" started-at="2023-11-20T15:32:28 IST" name="createProduct" finished-at="2023-11-20T15:32:44 IST" duration-ms="15400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProduct -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testRepo.CreateProduct@46cdf8bd]" started-at="2023-11-20T15:32:44 IST" name="logoutOperation" finished-at="2023-11-20T15:32:45 IST" duration-ms="1331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:testRepo.CreateProduct@46cdf8bd]" started-at="2023-11-20T15:32:45 IST" name="closeWindow" finished-at="2023-11-20T15:32:46 IST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- testRepo.CreateProduct -->
+      <class name="testRepo.CreateOpportnity">
+        <test-method is-config="true" signature="dbConnectionEstablish()[pri:0, instance:testRepo.CreateOpportnity@2892d68]" started-at="2023-11-20T15:28:57 IST" name="dbConnectionEstablish" finished-at="2023-11-20T15:28:57 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbConnectionEstablish -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testRepo.CreateOpportnity@2892d68]" started-at="2023-11-20T15:28:57 IST" name="launchBrowser" finished-at="2023-11-20T15:30:32 IST" duration-ms="95207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testRepo.CreateOpportnity@2892d68]" started-at="2023-11-20T15:30:32 IST" name="loginOperation" finished-at="2023-11-20T15:30:38 IST" duration-ms="6281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method signature="createOpportunity()[pri:0, instance:testRepo.CreateOpportnity@2892d68]" started-at="2023-11-20T15:30:38 IST" name="createOpportunity" finished-at="2023-11-20T15:30:49 IST" duration-ms="10954" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Opportunity...']"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16ebe88a25106e5c9721ea7b4b880d6d, findElement {using=xpath, value=//img[@title='Create Opportunity...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\devee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50332/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16ebe88a25106e5c9721ea7b4b880d6d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Opportunity...']"}
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16ebe88a25106e5c9721ea7b4b880d6d, findElement {using=xpath, value=//img[@title='Create Opportunity...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\devee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50332}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50332/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16ebe88a25106e5c9721ea7b4b880d6d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at objectRepository.OpportunityListPagePom.clickCreateOpportunity(OpportunityListPagePom.java:73)
+at testRepo.CreateOpportnity.createOpportunity(CreateOpportnity.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOpportunity -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testRepo.CreateOpportnity@2892d68]" started-at="2023-11-20T15:30:49 IST" name="logoutOperation" finished-at="2023-11-20T15:30:51 IST" duration-ms="1237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:testRepo.CreateOpportnity@2892d68]" started-at="2023-11-20T15:30:51 IST" name="closeWindow" finished-at="2023-11-20T15:30:52 IST" duration-ms="901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="dbConnectionClosed()[pri:0, instance:testRepo.CreateOpportnity@2892d68]" started-at="2023-11-20T15:41:47 IST" name="dbConnectionClosed" finished-at="2023-11-20T15:41:47 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.sql.Connection.close()" because "this.c" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.sql.Connection.close()" because "this.c" is null
+at genericUtility.DataBaseUtility.closeConnection(DataBaseUtility.java:25)
+at genericUtility.BaseClass.dbConnectionClosed(BaseClass.java:59)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbConnectionClosed -->
+      </class> <!-- testRepo.CreateOpportnity -->
+      <class name="testRepo.CreateOrganization">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testRepo.CreateOrganization@f0c8a99]" started-at="2023-11-20T15:32:46 IST" name="launchBrowser" finished-at="2023-11-20T15:34:17 IST" duration-ms="90484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testRepo.CreateOrganization@f0c8a99]" started-at="2023-11-20T15:34:17 IST" name="loginOperation" finished-at="2023-11-20T15:34:19 IST" duration-ms="2047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method signature="createOrganization()[pri:0, instance:testRepo.CreateOrganization@f0c8a99]" started-at="2023-11-20T15:34:19 IST" name="createOrganization" finished-at="2023-11-20T15:34:27 IST" duration-ms="8377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganization -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testRepo.CreateOrganization@f0c8a99]" started-at="2023-11-20T15:34:27 IST" name="logoutOperation" finished-at="2023-11-20T15:34:31 IST" duration-ms="3508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:testRepo.CreateOrganization@f0c8a99]" started-at="2023-11-20T15:34:31 IST" name="closeWindow" finished-at="2023-11-20T15:34:31 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- testRepo.CreateOrganization -->
+      <class name="testRepo.CreateContact">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testRepo.CreateContact@f78a47e]" started-at="2023-11-20T15:38:00 IST" name="launchBrowser" finished-at="2023-11-20T15:39:32 IST" duration-ms="91543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testRepo.CreateContact@f78a47e]" started-at="2023-11-20T15:39:32 IST" name="loginOperation" finished-at="2023-11-20T15:39:35 IST" duration-ms="3314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method signature="createContact()[pri:0, instance:testRepo.CreateContact@f78a47e]" started-at="2023-11-20T15:39:35 IST" name="createContact" finished-at="2023-11-20T15:39:47 IST" duration-ms="11947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testRepo.CreateContact@f78a47e]" started-at="2023-11-20T15:39:47 IST" name="logoutOperation" finished-at="2023-11-20T15:39:48 IST" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:testRepo.CreateContact@f78a47e]" started-at="2023-11-20T15:39:48 IST" name="closeWindow" finished-at="2023-11-20T15:39:48 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- testRepo.CreateContact -->
+      <class name="testRepo.OrganizationWithIndustry">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testRepo.OrganizationWithIndustry@26d9b808]" started-at="2023-11-20T15:36:17 IST" name="launchBrowser" finished-at="2023-11-20T15:37:50 IST" duration-ms="92972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testRepo.OrganizationWithIndustry@26d9b808]" started-at="2023-11-20T15:37:50 IST" name="loginOperation" finished-at="2023-11-20T15:37:53 IST" duration-ms="2460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method signature="createOrganization()[pri:0, instance:testRepo.OrganizationWithIndustry@26d9b808]" started-at="2023-11-20T15:37:53 IST" name="createOrganization" finished-at="2023-11-20T15:37:57 IST" duration-ms="4493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganization -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testRepo.OrganizationWithIndustry@26d9b808]" started-at="2023-11-20T15:37:57 IST" name="logoutOperation" finished-at="2023-11-20T15:38:00 IST" duration-ms="2595" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ad601421d9b6243c24faeb9140bed44f, clickElement {id=91523968A309C592B793798C1EE6C5CF_element_180}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\devee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50697/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ad601421d9b6243c24faeb9140bed44f)] -> xpath: //img[@src='themes/softed/images/user.PNG']]
+Session ID: ad601421d9b6243c24faeb9140bed44f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ad601421d9b6243c24faeb9140bed44f, clickElement {id=91523968A309C592B793798C1EE6C5CF_element_180}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\devee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50697}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50697/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ad601421d9b6243c24faeb9140bed44f)] -> xpath: //img[@src='themes/softed/images/user.PNG']]
+Session ID: ad601421d9b6243c24faeb9140bed44f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at objectRepository.HomePagePom.logoutOperation(HomePagePom.java:120)
+at genericUtility.BaseClass.logoutOperation(BaseClass.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:testRepo.OrganizationWithIndustry@26d9b808]" started-at="2023-11-20T15:38:00 IST" name="closeWindow" finished-at="2023-11-20T15:38:00 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- testRepo.OrganizationWithIndustry -->
+      <class name="testRepo.CreateLead">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testRepo.CreateLead@740cae06]" started-at="2023-11-20T15:34:31 IST" name="launchBrowser" finished-at="2023-11-20T15:36:04 IST" duration-ms="93602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testRepo.CreateLead@740cae06]" started-at="2023-11-20T15:36:04 IST" name="loginOperation" finished-at="2023-11-20T15:36:07 IST" duration-ms="2438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method signature="createLead()[pri:0, instance:testRepo.CreateLead@740cae06]" started-at="2023-11-20T15:36:07 IST" name="createLead" finished-at="2023-11-20T15:36:16 IST" duration-ms="9656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testRepo.CreateLead@740cae06]" started-at="2023-11-20T15:36:16 IST" name="logoutOperation" finished-at="2023-11-20T15:36:17 IST" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:testRepo.CreateLead@740cae06]" started-at="2023-11-20T15:36:17 IST" name="closeWindow" finished-at="2023-11-20T15:36:17 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- testRepo.CreateLead -->
+      <class name="testRepo.CreateContactBYOrganization">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testRepo.CreateContactBYOrganization@644baf4a]" started-at="2023-11-20T15:39:48 IST" name="launchBrowser" finished-at="2023-11-20T15:41:21 IST" duration-ms="93035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginOperation()[pri:0, instance:testRepo.CreateContactBYOrganization@644baf4a]" started-at="2023-11-20T15:41:21 IST" name="loginOperation" finished-at="2023-11-20T15:41:24 IST" duration-ms="2909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOperation -->
+        <test-method signature="createContact()[pri:0, instance:testRepo.CreateContactBYOrganization@644baf4a]" started-at="2023-11-20T15:41:24 IST" name="createContact" finished-at="2023-11-20T15:41:46 IST" duration-ms="22235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="logoutOperation()[pri:0, instance:testRepo.CreateContactBYOrganization@644baf4a]" started-at="2023-11-20T15:41:46 IST" name="logoutOperation" finished-at="2023-11-20T15:41:47 IST" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutOperation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:testRepo.CreateContactBYOrganization@644baf4a]" started-at="2023-11-20T15:41:47 IST" name="closeWindow" finished-at="2023-11-20T15:41:47 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- testRepo.CreateContactBYOrganization -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
