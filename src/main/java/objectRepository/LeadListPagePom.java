@@ -81,6 +81,10 @@ public void clickcreateLeadbutton() {
 	getCreateLeadbtn().click();
 	
 }
+public void clickEditBtn() {
+	getEditBtn().click();
+	
+}
 
    
 }

@@ -147,6 +147,8 @@ public class CreateLeadPomPage {
 		getLastname().sendKeys(lname);
       getCompanyname().sendKeys(comname);
       getSavebtn().click();
-      
+      /*
+       * 
+       */
 	}	
 }

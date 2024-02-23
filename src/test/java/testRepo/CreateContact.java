@@ -19,6 +19,7 @@ public class CreateContact extends BaseClass {
 	String LNAME=EUTIL.getDataFromExcel("Contact",2 , 3);
 	
 	HomePagePom HP=new HomePagePom(driver);
+	
 	HP.clickContacts();
 	ContactListPagePom CLP=new ContactListPagePom(driver);
 	CLP.clickCreateContact();
