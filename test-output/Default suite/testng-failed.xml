@@ -3,9 +3,9 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testRepo.CreateContact">
+      <class name="testPractise.Tc_02">
         <methods>
-          <include name="createContact"/>
+          <include name="calendarmod"/>
           <include name="logoutOperation"/>
           <include name="dbConnectionClosed"/>
           <include name="closeWindow"/>
@@ -13,7 +13,7 @@
           <include name="dbConnectionEstablish"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- testRepo.CreateContact -->
+      </class> <!-- testPractise.Tc_02 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
